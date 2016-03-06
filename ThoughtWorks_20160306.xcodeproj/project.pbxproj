@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		FBFEBE4C1C8BC9460099AC41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFEBE4B1C8BC9460099AC41 /* main.m */; };
+		FBFEBE551C8BC9DD0099AC41 /* CHItemEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFEBE541C8BC9DD0099AC41 /* CHItemEntity.m */; };
+		FBFEBE581C8BD0850099AC41 /* CHCashRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFEBE571C8BD0850099AC41 /* CHCashRegister.m */; };
+		FBFEBE661C8C0CE50099AC41 /* TWWorksTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFEBE651C8C0CE50099AC41 /* TWWorksTest.m */; };
+		FBFEBE6C1C8C1B370099AC41 /* CHCashRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFEBE571C8BD0850099AC41 /* CHCashRegister.m */; };
+		FBFEBE6D1C8C1B740099AC41 /* CHItemEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFEBE541C8BC9DD0099AC41 /* CHItemEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +30,24 @@
 /* Begin PBXFileReference section */
 		FBFEBE481C8BC9460099AC41 /* ThoughtWorks_20160306 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ThoughtWorks_20160306; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFEBE4B1C8BC9460099AC41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBFEBE531C8BC9DD0099AC41 /* CHItemEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHItemEntity.h; sourceTree = "<group>"; };
+		FBFEBE541C8BC9DD0099AC41 /* CHItemEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHItemEntity.m; sourceTree = "<group>"; };
+		FBFEBE561C8BD0850099AC41 /* CHCashRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCashRegister.h; sourceTree = "<group>"; };
+		FBFEBE571C8BD0850099AC41 /* CHCashRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHCashRegister.m; path = ThoughtWorks_20160306/CHCashRegister.m; sourceTree = SOURCE_ROOT; };
+		FBFEBE631C8C0CE50099AC41 /* TWWorksTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWWorksTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBFEBE651C8C0CE50099AC41 /* TWWorksTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWWorksTest.m; sourceTree = "<group>"; };
+		FBFEBE671C8C0CE50099AC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FBFEBE451C8BC9460099AC41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFEBE601C8C0CE50099AC41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				FBFEBE4A1C8BC9460099AC41 /* ThoughtWorks_20160306 */,
+				FBFEBE641C8C0CE50099AC41 /* TWWorksTest */,
 				FBFEBE491C8BC9460099AC41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				FBFEBE481C8BC9460099AC41 /* ThoughtWorks_20160306 */,
+				FBFEBE631C8C0CE50099AC41 /* TWWorksTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +79,21 @@
 			isa = PBXGroup;
 			children = (
 				FBFEBE4B1C8BC9460099AC41 /* main.m */,
+				FBFEBE531C8BC9DD0099AC41 /* CHItemEntity.h */,
+				FBFEBE541C8BC9DD0099AC41 /* CHItemEntity.m */,
+				FBFEBE561C8BD0850099AC41 /* CHCashRegister.h */,
+				FBFEBE571C8BD0850099AC41 /* CHCashRegister.m */,
 			);
 			path = ThoughtWorks_20160306;
+			sourceTree = "<group>";
+		};
+		FBFEBE641C8C0CE50099AC41 /* TWWorksTest */ = {
+			isa = PBXGroup;
+			children = (
+				FBFEBE651C8C0CE50099AC41 /* TWWorksTest.m */,
+				FBFEBE671C8C0CE50099AC41 /* Info.plist */,
+			);
+			path = TWWorksTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +116,23 @@
 			productReference = FBFEBE481C8BC9460099AC41 /* ThoughtWorks_20160306 */;
 			productType = "com.apple.product-type.tool";
 		};
+		FBFEBE621C8C0CE50099AC41 /* TWWorksTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBFEBE681C8C0CE50099AC41 /* Build configuration list for PBXNativeTarget "TWWorksTest" */;
+			buildPhases = (
+				FBFEBE5F1C8C0CE50099AC41 /* Sources */,
+				FBFEBE601C8C0CE50099AC41 /* Frameworks */,
+				FBFEBE611C8C0CE50099AC41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TWWorksTest;
+			productName = TWWorksTest;
+			productReference = FBFEBE631C8C0CE50099AC41 /* TWWorksTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +143,9 @@
 				ORGANIZATIONNAME = hejunqiu;
 				TargetAttributes = {
 					FBFEBE471C8BC9460099AC41 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					FBFEBE621C8C0CE50099AC41 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
@@ -109,9 +163,20 @@
 			projectRoot = "";
 			targets = (
 				FBFEBE471C8BC9460099AC41 /* ThoughtWorks_20160306 */,
+				FBFEBE621C8C0CE50099AC41 /* TWWorksTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBFEBE611C8C0CE50099AC41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FBFEBE441C8BC9460099AC41 /* Sources */ = {
@@ -119,6 +184,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBFEBE4C1C8BC9460099AC41 /* main.m in Sources */,
+				FBFEBE581C8BD0850099AC41 /* CHCashRegister.m in Sources */,
+				FBFEBE551C8BC9DD0099AC41 /* CHItemEntity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBFEBE5F1C8C0CE50099AC41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFEBE6C1C8C1B370099AC41 /* CHCashRegister.m in Sources */,
+				FBFEBE6D1C8C1B740099AC41 /* CHItemEntity.m in Sources */,
+				FBFEBE661C8C0CE50099AC41 /* TWWorksTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +295,28 @@
 			};
 			name = Release;
 		};
+		FBFEBE691C8C0CE50099AC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TWWorksTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.che.TWWorksTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBFEBE6A1C8C0CE50099AC41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TWWorksTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.che.TWWorksTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -235,6 +334,14 @@
 			buildConfigurations = (
 				FBFEBE501C8BC9460099AC41 /* Debug */,
 				FBFEBE511C8BC9460099AC41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FBFEBE681C8C0CE50099AC41 /* Build configuration list for PBXNativeTarget "TWWorksTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBFEBE691C8C0CE50099AC41 /* Debug */,
+				FBFEBE6A1C8C0CE50099AC41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
